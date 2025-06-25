@@ -1,12 +1,10 @@
-# DJI Fly App Livestream Operation Guides
+# Руководство по использованию приложения DJI Fly для трансляций в реальном режиме времени
 
 If you want to know which live streaming platforms are supported by DJI Fly App, 
 how to live stream, which products support live streaming, optional resolution 
 and optional bitrate for live streaming, you can refer to this content for help. 
 
-#Product Usage
-
-Applicable Products:Camera Drones
+**Соответствующие продукты:** дроны с камерой
 The livestreaming function is supported in the DJI Fly app V1.4.12 and later versions. 
 You can enable live streaming in "Image Transmission Settings" to share the flight screen.
 
