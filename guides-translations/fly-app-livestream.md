@@ -1,37 +1,41 @@
 # Руководство по использованию приложения DJI Fly для трансляций в реальном режиме времени
 
-If you want to know which live streaming platforms are supported by DJI Fly App, 
-how to live stream, which products support live streaming, optional resolution 
-and optional bitrate for live streaming, you can refer to this content for help. 
+Чтобы узнать, какие платформы трансляций в реальном режиме времени поддерживаются приложением DJI Fly, как делать потоковую трансляцию, какие продукты поддерживают живую трансляцию, дополнительные разрешения и скорости передачи видео, изучите информацию ниже.
 
 **Соответствующие продукты:** дроны с камерой
+
 The livestreaming function is supported in the DJI Fly app V1.4.12 and later versions. 
 You can enable live streaming in "Image Transmission Settings" to share the flight screen.
 
 1. For DJI Fly V1.16.0 and later, when using DJI RC 2/DJI RC Pro/DJI Smart Controller for 
 livestreaming via DJI Fly, you need to plug in the microphone to start the livestreaming.
 
-2. Livestreaming is not supported when used with the DJI RC.
+2. Пульт дистанционного управления DJI RC не поддерживает трансляцию в реальном режиме времени.
 
 3. Only RTMP livestreaming is supported when using the DJI Mavic 4 Pro, DJI Flip, DJI Air 3S, DJI Air 3, or DJI Mini 4 Pro with the DJI RC 2.
 
 4. When other aircraft are used with DJI RC-N3/DJI RC-N2/DJI RC-N1, they support RTMP livestreaming.
 
-## Optional resolutions and bitrates
+## Дополнительные разрешения и скорости передачи видео
 
-Optional Resolution: 1080P or 720P
+Дополнительное разрешение: 1080P или 720P
 
-DJI RC 2 supports only 720P for livestreaming due to hardware limitations.
+Из-за аппаратных ограничений пульт DJI RC 2 поддерживает трансляцию в реальном режиме времени только в формате 720P.
 
-Optional Bitrates: iOS devices: 2 Mbps or 1 Mbps; Android devices: 5 Mbps or 3 Mbps.
+Дополнительные скорости передачи видео: 
+    
+    - устройства на iOS: 2 Мбит/сек или 1 Мбит/сек; 
+    - устройства на Android: 5 Мбит/сек или 3 Мбит/сек.
 
-Supported live-streaming platforms
-RTMP
+**Поддерживаемые платформы:**
 
-RTMP Livestream Operation Guides
+    RTMP
+
+**RTMP Livestream Operation Guides**
+
 Before starting
 
-1. Download and install DJI Fly app.
+1. Загрузите и установите приложение DJI Fly.
 
 2. Make sure that the App has been connected to Internet, such as 4G/5G signals or Wi-Fi.
 
