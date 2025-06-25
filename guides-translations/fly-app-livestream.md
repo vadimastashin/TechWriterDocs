@@ -1,9 +1,17 @@
-DJI Fly App Livestream Operation Guides
-If you want to know which live streaming platforms are supported by DJI Fly App, how to live stream, which products support live streaming, optional resolution and optional bitrate for live streaming, you can refer to this content for help. #Product Usage
-Applicable Products:Camera Drones
-The livestreaming function is supported in the DJI Fly app V1.4.12 and later versions. You can enable live streaming in "Image Transmission Settings" to share the flight screen.
+# DJI Fly App Livestream Operation Guides
 
-1. For DJI Fly V1.16.0 and later, when using DJI RC 2/DJI RC Pro/DJI Smart Controller for livestreaming via DJI Fly, you need to plug in the microphone to start the livestreaming.
+If you want to know which live streaming platforms are supported by DJI Fly App, 
+how to live stream, which products support live streaming, optional resolution 
+and optional bitrate for live streaming, you can refer to this content for help. 
+
+#Product Usage
+
+Applicable Products:Camera Drones
+The livestreaming function is supported in the DJI Fly app V1.4.12 and later versions. 
+You can enable live streaming in "Image Transmission Settings" to share the flight screen.
+
+1. For DJI Fly V1.16.0 and later, when using DJI RC 2/DJI RC Pro/DJI Smart Controller for 
+livestreaming via DJI Fly, you need to plug in the microphone to start the livestreaming.
 
 2. Livestreaming is not supported when used with the DJI RC.
 
@@ -11,7 +19,8 @@ The livestreaming function is supported in the DJI Fly app V1.4.12 and later ver
 
 4. When other aircraft are used with DJI RC-N3/DJI RC-N2/DJI RC-N1, they support RTMP livestreaming.
 
-Optional resolutions and bitrates
+## Optional resolutions and bitrates
+
 Optional Resolution: 1080P or 720P
 
 DJI RC 2 supports only 720P for livestreaming due to hardware limitations.
