@@ -39,7 +39,7 @@ livestreaming via DJI Fly, you need to plug in the microphone to start the lives
 
 **Перед началом работы:**
 
-1. Загрузите и установите приложение DJI Fly.
+1. Загрузите и установите приложение [DJI Fly](https://www.dji.com/downloads/djiapp/dji-fly).
 
 2. Убедитесь, что приложение подключено к интернету через 4G/5G или Wi-Fi.
 
@@ -67,10 +67,11 @@ livestreaming via DJI Fly, you need to plug in the microphone to start the lives
 
 Ниже показан скриншот с платформы Bilibili для получения протокола RTMP:
 
-Please note that “/” needs to be added between the livestreaming address and livestreaming codes as a transition. If the livestreaming address already ends with a “/”, it is not necessary to add another slash mark. For example, In the example, the livestreaming address is:rtmp://10.39.12.189:1935, and the livestreaming code is :livxxxme. The combination is: rtmp://10.39.12.189:1935/livxxxme.
+> [!IMPORTANT]
+> Между адресом и кодами прямой трансляции добавьте «/» в качестве перехода. Если адрес прямой трансляции уже заканчивается на «/», то добавлять еще один слеш не нужно. Например, адрес прямой трансляции: rtmp://10.39.12.189:1935, а код прямой трансляции: livxxxme. Получаем: rtmp://10.39.12.189:1935/livxxxme.
 
 组<5@2x.png>
 
-4. After entering “RTMP Address”, “Livestream Resolution” and “Livestream Bitrate”, tap “Start”. A countdown “3/2/1” will appear. The livestream will start automatically once the countdown ends. After the livestreaming platform is connected successfully, a red icon will appear on the camera view.
+4. После заполнения полей **RTMP Address**, **Livestream Resolution** и **Livestream Bitrate** нажмите **Start**. На экране появится обратный отсчет **3/2/1**. После завершения обратного отсчета автоматически запустится прямая трансляция. Если подключение к платформе для прямых трансляций было успешным, то на экране, куда будет выводится вид с камеры, появится красная иконка.
 
 组<6@2x.png>
