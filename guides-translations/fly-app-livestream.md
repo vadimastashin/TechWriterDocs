@@ -53,7 +53,7 @@ livestreaming via DJI Fly, you need to plug in the microphone to start the lives
 
 Примечание: При подключении пульта управления к приложению DJI Fly используйте USB-кабель для подключения к дрону. Это не нужно делать в том случае, если вы используете пульт дистанционного управления со встроенным экраном, например, DJI RC Pro и DJI Smart Controller.
 
-组<1@2x.png>
+![Перед началом работы](assets/dji_fly_livestream_1.png)
 
 2. Нажмите GO FLY > Transmission > Live Streaming Platforms > RTMP.
 
