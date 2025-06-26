@@ -11,22 +11,22 @@
 
 Потоковую трансляцию поддерживает приложение DJI Fly версии V1.4.12 и выше. Чтобы использовать эту возможность и делиться изображением с экрана, вам нужно включить потоковую трансляцию в **Настройках передачи изображения** / **Image Transmission Settings**.
 
-1. For DJI Fly V1.16.0 and later, when using DJI RC 2/DJI RC Pro/DJI Smart Controller for 
+> 1. For DJI Fly V1.16.0 and later, when using DJI RC 2/DJI RC Pro/DJI Smart Controller for 
 livestreaming via DJI Fly, you need to plug in the microphone to start the livestreaming.
-
-2. Пульт дистанционного управления DJI RC не поддерживает трансляцию в реальном режиме времени.
-
-3. Only RTMP livestreaming is supported when using the DJI Mavic 4 Pro, DJI Flip, DJI Air 3S, DJI Air 3, or DJI Mini 4 Pro with the DJI RC 2.
-
-4. When other aircraft are used with DJI RC-N3/DJI RC-N2/DJI RC-N1, they support RTMP livestreaming.
+> 
+> 2. Пульт дистанционного управления DJI RC не поддерживает трансляцию в реальном режиме времени.
+> 
+> 3. Прямая трансляция по протоколу RTMP поддерживается, если вы используете дроны DJI Mavic 4 Pro, DJI Flip, DJI Air 3S, DJI Air 3 или DJI Mini 4 Pro вместе с пультом DJI RC 2.
+> 
+> 4. When other aircraft are used with DJI RC-N3/DJI RC-N2/DJI RC-N1, they support RTMP livestreaming.
 
 ## Дополнительные разрешения и скорости передачи видео
 
-Дополнительное разрешение: 1080P или 720P
+**Дополнительное разрешение:** 1080P или 720P
 
-Из-за аппаратных ограничений пульт DJI RC 2 поддерживает трансляцию в реальном режиме времени только в формате 720P.
+> Из-за аппаратных ограничений пульт DJI RC 2 поддерживает трансляцию в реальном режиме времени только в формате 720P.
 
-Дополнительные скорости передачи видео: 
+**Дополнительные скорости передачи видео:** 
     
     - устройства на iOS: 2 Мбит/сек или 1 Мбит/сек; 
     - устройства на Android: 5 Мбит/сек или 3 Мбит/сек.
@@ -37,25 +37,25 @@ livestreaming via DJI Fly, you need to plug in the microphone to start the lives
 
 **RTMP Livestream Operation Guides**
 
-Before starting
+**Перед началом работы:**
 
 1. Загрузите и установите приложение DJI Fly.
 
-2. Make sure that the App has been connected to Internet, such as 4G/5G signals or Wi-Fi.
+2. Убедитесь, что приложение подключено к интернету через 4G/5G или Wi-Fi.
 
-3. Confirm that the account has livestream permission for the corresponding platform. If not, the live-streaming codes cannot be obtained, and the RTMP live stream will be unable to work.
+3. Подтвердите, что у аккаунта есть разрешение на прямую трансляцию на соответствующей платформе. Если этого разрешения нет, то получить коды для трансляции нельзя и провести ее по протоколу RTMP невозможно.
 
-4. Make sure that the current platform supports RTMP protocols. Please check the livestream guidelines or contact the customer service of the corresponding platform.
+4. Убедитесь, что текущая платформа поддерживает протоколы RTMP. Изучите руководства по прямой трансляции или свяжитесь со службой поддержки клиентов платформы.
 
-After preparation, please follow the steps below:
+**После подготовки выполните следующие действия:**
 
-1. Power the aircraft and remote controller on, and connect the remote controller to the DJI Fly app. After the connection is successful, “GO FLY” will be displayed on the page.
+1. Включите питание дрона и пульта управления, подклюaчите пульт к приложению DJI Fly. Если подключение выполнено успешно, то на экране появится сообщение **GO FLY**.
 
-Note: When connecting the remote controller to the DJI Fly app, it is necessary to use a USB cable to connect to the aircraft. This step can be omitted for remote controllers with a built-in screen (such as DJI RC Pro and DJI Smart Controller).
+Примечание: При подключении пульта управления к приложению DJI Fly используйте USB-кабель для подключения к дрону. Это не нужно делать в том случае, если вы используете пульт дистанционного управления со встроенным экраном, например, DJI RC Pro и DJI Smart Controller.
 
 组<1@2x.png>
 
-2. Tap GO FLY > Transmission > Live Streaming Platforms > RTMP.
+2. Нажмите GO FLY > Transmission > Live Streaming Platforms > RTMP.
 
 组<2@2x.png>
 
@@ -63,9 +63,9 @@ Note: When connecting the remote controller to the DJI Fly app, it is necessary 
 
 组<4@2x.png>
 
-3. Enter the livestreaming address and codes obtained from the livestreaming platform in “RTMP Address”. For detailed operation steps, refer to the livestream guide or contact the corresponding platform’s customer service.
+3. Введите адрес прямой трансляции и коды, полученные от платформы в поле **RTMP Address**. Чтобы получить дополнительную информацию об этом, изучите руководство по прямой трансляции или свяжитесь со службой поддержки клиентов платформы.
 
-Below is the reference screenshot from the Bilibili platform for obtaining RTMP:
+Ниже показан скриншот с платформы Bilibili для получения протокола RTMP:
 
 Please note that “/” needs to be added between the livestreaming address and livestreaming codes as a transition. If the livestreaming address already ends with a “/”, it is not necessary to add another slash mark. For example, In the example, the livestreaming address is:rtmp://10.39.12.189:1935, and the livestreaming code is :livxxxme. The combination is: rtmp://10.39.12.189:1935/livxxxme.
 
