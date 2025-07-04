@@ -1,0 +1,130 @@
+openapi: "3.0.0"
+
+info:
+  version: "1.0"
+  title: API времени заказа и восхода солнца
+  description: "Бесплатный API сообщает время заката и восхода солнца для заданной широты и долготы."
+  contact:
+    name: команда API
+    url: https://sunrise-sunset.org/contact
+
+servers:
+  - url: https://api.sunrise-sunset.org
+    description: Производственный сервер
+
+paths:
+  /json:
+    get:
+      summary: "Получение информации о времени восхода/заката"
+      description: "Метод возвращает информацию о закате и восходе солнца для заданного местоположения на основе параметров широты и долготы."
+      operationId: getSunriseSunset
+      parameters:
+        - name: lat
+          in: query
+          description: "Широта в десятичных градусах."
+          required: true
+          schema:
+            type: number
+            format: float
+          example: "37.3708698"
+
+        - name: lng
+          in: query
+          description: "Долгота в десятичных градусах."
+          required: true
+          schema:
+            type: number
+            format: float
+          example: "-122.037593"
+
+        - name: date
+          in: query
+          description: "Дата в формате ГГГГ-ММ-ДД. Принимает и другие форматы дат, включая относительные форматы дат. Если отсутствует, то по умолчанию указана текущая дата."
+          required: false
+          schema:
+            type: string
+          example: "today"
+
+        - name: callback
+          in: query
+          description: "Название функции обратного вызова для ответа JSONP. Необязательно."
+          required: false
+          schema:
+            type: string
+
+        - name: formatted
+          in: query
+          required: false
+          description: "0 или 1 (по умолчанию 1). Данные о времени в ответе будут выведены в соответствии с ISO 8601, а значение day_length будет отображаться в секундах."
+          schema:
+            type: integer
+            format: int32
+          example: 1
+      responses:
+        200:
+          description: Ответ на запрос о времени восхода и захода солнца
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SunriseSunsetResponse'
+components:
+  schemas:
+    SunriseSunsetResponse:
+      title: Response
+      type: object
+      properties:
+        results:
+          type: object
+          properties:
+            sunrise:
+              type: string
+              description: время восхода солнца
+              example: '7:27:02 AM'
+            sunset:
+              type: string
+              description: время захода солнца
+              example: '5:05:55 PM'
+            solar_noon:
+              type: string
+              description: время, когда солнце находится в зените
+              example: '12:16:28 PM'
+            day_length:
+              type: string
+              description: длительность дня
+              example: '9:38:53'
+            civil_twilight_begin:
+              type: string
+              description: время начала сумерек
+              example: '6:58:14 AM'
+            civil_twilight_end:
+              type: string
+              description: время окончания сумерек
+              example: '5:34:43 PM'
+            nautical_twilight_begin:
+              type: string
+              description: время начала навигационных сумерек
+              example: '6:25:47 AM'
+            nautical_twilight_end:
+              type: string
+              description: время окончания навигационных сумерек
+              example: '6:07:10 PM'
+            astronomical_twilight_begin:
+              type: string
+              description: время начала астрономических сумерек
+              example: '5:54:14 AM'
+            astronomical_twilight_end:
+              type: string
+              description: время окончания астрономических сумерек
+              example: '6:38:43 PM'
+        status:
+          type: string
+          description: "Четыре возможных статуса:\n
+            \n* `OK`: Ошибок нет.
+            \n* `INVALID_REQUEST`: Параметры широты или долготы отсутствуют или введены неверно.
+            \n* `INVALID_DATE`: Дата введена неверно или отсутствует;
+            \n* `UNKNOWN_ERROR`: Запрос не может быть обработан из-за ошибки сервера. Запрос может быть выполнен успешно, если вы попробуете еще раз."
+          example: "OK"
+
+externalDocs:
+  description: Документация и основной сайт
+  url: https://sunrise-sunset.org/api
